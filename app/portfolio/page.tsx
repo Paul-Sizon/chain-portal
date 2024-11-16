@@ -17,10 +17,11 @@ export default function Home() {
         <>
             {walletAddress === '' && <p>Please connect your wallet</p>}
             {walletAddress !== '' && <div className="container mx-auto px-8">
-                <div className="mt-16 p-8 rounded-b-lg  border-gray-400 border-2 justify-between flex">
+                <div className="mt-16 p-8 border-2 rounded-b-lg border-gray-400 justify-between flex">
                     <div className="flex-row items-center">
                         <div className="text-2xl">Connected wallet:</div>
-                        <div className="text-gray-400 items-end">{walletAddress.substring(0, 5)}...{walletAddress.substring(walletAddress.length - 5)}</div>
+                        <div
+                            className="text-gray-400 items-end">{walletAddress.substring(0, 5)}...{walletAddress.substring(walletAddress.length - 5)}</div>
                     </div>
                     <div className="text-white flex space-x-4">
                         <div>
