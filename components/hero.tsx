@@ -4,6 +4,9 @@ import { ArrowRight } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 
 export function Hero() {
+    const redirectToSwap = async () => {
+        window.location.href = '/swap'
+    }
   return (
     <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
@@ -24,8 +27,8 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-[#00FF94] text-black hover:bg-[#00FF94]/90">
-            Launch App
+          <Button size="lg" className="bg-[#00FF94] text-black hover:bg-[#00FF94]/90" onClick={redirectToSwap}>
+              Launch App
             <ArrowRight className="ml-2 h-5 w-5" weight="bold" />
           </Button>
           <Button size="lg" variant="outline" className="border-[#00FF94] text-[#00FF94] hover:bg-[#00FF94]/10">
