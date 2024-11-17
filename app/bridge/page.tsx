@@ -6,6 +6,9 @@ import { ethers } from "ethers";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
 import { getWeb3Provider } from "@dynamic-labs/ethers-v6";
 
+
+// TODO: currently I get reverse without message
+
 export default function BridgePage() {
     const [sellAmount, setSellAmount] = useState<number | string>("");
     const [buyAmount, setBuyAmount] = useState<number | string>("");
@@ -130,7 +133,7 @@ export default function BridgePage() {
                             className="bg-white text-black font-semibold w-full py-2 rounded-lg"
                             onClick={getCcipMessage}
                         >
-                            Get CCIP Message
+                            Bridge
                         </button>
 
                         {ccipMessage && (
