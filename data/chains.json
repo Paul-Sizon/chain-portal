@@ -1,0 +1,31 @@
+{
+  "chains": {
+    "Optimism": {
+      "chainId": 10,
+      "ccipRouter": "0xRouterAddressOptimism",
+      "usdc": "0xUSDCAddressOptimism",
+      "weth": "0xWETHAddressOptimism",
+      "link": "0xLINKAddressOptimism",
+      "layerZeroEndpoint": "0xLayerZeroEndpointOptimism",
+      "chainSelector": "10001"
+    },
+    "Base": {
+      "chainId": 8453,
+      "ccipRouter": "0xRouterAddressBase",
+      "usdc": "0xUSDCAddressBase",
+      "weth": "0xWETHAddressBase",
+      "link": "0xLINKAddressBase",
+      "layerZeroEndpoint": "0xLayerZeroEndpointBase",
+      "chainSelector": "20002"
+    },
+    "Arbitrum": {
+      "chainId": 42161,
+      "ccipRouter": "0xRouterAddressArbitrum",
+      "usdc": "0xUSDCAddressArbitrum",
+      "weth": "0xWETHAddressArbitrum",
+      "link": "0xLINKAddressArbitrum",
+      "layerZeroEndpoint": "0xLayerZeroEndpointArbitrum",
+      "chainSelector": "30003"
+    }
+  }
+}
